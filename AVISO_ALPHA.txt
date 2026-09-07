@@ -1,0 +1,14 @@
+Netrunner Studio — aviso da versão alpha
+=========================================
+
+O código próprio do Netrunner Studio é distribuído separadamente dos
+componentes de terceiros. Consulte LICENSE-NETRUNNER.txt e
+THIRD_PARTY_NOTICES.md na raiz desta instalação.
+
+Esta build usa PySide6/Qt for Python sob a opção LGPL e o motor OBS/libobs
+quando a variante bundled for escolhida. As licenças desses componentes
+continuam válidas e não são substituídas pela licença do Netrunner Studio.
+
+O instalador alpha é distribuído sem certificado pago de assinatura de código.
+Para reduzir dúvidas de segurança, publique o SHA-256 do instalador em um
+canal oficial e mantenha os avisos e links de código-fonte disponíveis.

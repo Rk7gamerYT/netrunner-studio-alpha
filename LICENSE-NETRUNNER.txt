@@ -1,0 +1,19 @@
+Netrunner Studio — licença do código proprietário
+===================================================
+
+Copyright (c) 2026 Netrunner Studio.
+
+Os arquivos próprios do Netrunner Studio, incluindo o código em app/,
+native/libobs-next/, os scripts de empacotamento e os assets de marca, são
+proprietários. Nenhuma licença de redistribuição, modificação, sublicença ou
+acesso ao código-fonte é concedida, exceto mediante autorização escrita do
+titular ou quando a lei aplicável exigir.
+
+Este aviso NÃO se aplica às dependências de terceiros. As licenças e links
+correspondentes estão em THIRD_PARTY_NOTICES.md. Em particular, OBS Studio,
+PySide6/Qt e outras dependências mantêm suas próprias licenças, que prevalecem
+sobre este aviso na parte correspondente.
+
+IMPORTANTE PARA A DISTRIBUIÇÃO: o Netrunner Studio usa PySide6 na opção LGPL.
+O instalador deve manter os avisos de terceiros e não pode retirar os direitos
+previstos pela LGPL para as bibliotecas Qt correspondentes.
