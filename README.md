@@ -1,4 +1,4 @@
-# Netrunner Studio — Alpha 0.4
+# Netrunner Studio — Alpha 0.4.1
 
 Netrunner Studio é um estúdio de produção ao vivo para Windows, com canvas
 horizontal 16:9 e vertical 9:16, preview ao vivo, cenas, fontes, mixer de
@@ -9,17 +9,13 @@ uma instalação separada do OBS na variante alpha bundled.
 
 ## Download
 
-Baixe `NetrunnerStudio-Alpha-Setup-0.4.0.exe` na seção **Releases** e confira
+Baixe `NetrunnerStudio-Alpha-Setup-0.4.1.exe` na seção **Releases** e confira
 o SHA-256 publicado junto do arquivo antes de executar. Esta versão ainda é
 alpha e pode conter bugs; reporte problemas com passos para reproduzi-los.
 
-## Capturas
-
-![Janela principal](screenshots/main-window.png)
-
-![Configurações](screenshots/settings-window.png)
-
-![Painel de fontes](screenshots/sources-panel.png)
+As capturas serão atualizadas depois da rodada atual de correções visuais; a
+Release prioriza o instalador funcional e não usa imagens antigas de
+desenvolvimento como se fossem a interface final.
 
 ## Licenças
 
