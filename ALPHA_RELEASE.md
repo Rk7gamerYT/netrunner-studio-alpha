@@ -2,10 +2,10 @@
 
 ## O que já está pronto
 
-- PyInstaller em modo `onedir`: o usuário final não precisa ter Python
+- Nuitka em modo `standalone`: o usuário final não precisa ter Python
   instalado.
-- UPX desativado para reduzir heurísticas de antivírus sobre executáveis
-  comprimidos.
+- PySide6/Qt fixado em `6.10.1` e compilado sem UPX, evitando a falha de
+  carregamento do `Qt6Core.dll` reproduzida nas builds anteriores.
 - Metadados de versão e produto no executável.
 - Inno Setup por usuário, sem exigir administrador.
 - Layout dos painéis versionado: instalações antigas não restauram geometrias

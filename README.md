@@ -7,6 +7,10 @@ horizontal 16:9 e vertical 9:16, preview ao vivo, cenas, fontes, mixer de
 Esta página é o canal público para testers. O instalador não exige Python nem
 uma instalação separada do OBS na variante alpha bundled.
 
+A build A_0.4.1 atual usa Nuitka standalone com PySide6/Qt 6.10.1. O ciclo
+instalar → abrir → iniciar o host nativo → fechar → desinstalar foi validado
+no Windows 11 antes da publicação.
+
 ## Download
 
 Baixe `NetrunnerStudio-Alpha-Setup-0.4.1.exe` na seção **Releases** e confira

@@ -32,12 +32,13 @@ que o usuário substitua as bibliotecas LGPL por versões compatíveis.
 - Licença: BSD-3-Clause.
 - Projeto: <https://github.com/giampaolo/psutil>
 
-## PyInstaller
+## Nuitka
 
-- O bootloader é GPLv2 com a exceção específica que permite empacotar e
-  distribuir programas não livres. Ele é ferramenta/infraestrutura de build,
-  não código proprietário do Netrunner Studio.
-- Projeto: <https://github.com/pyinstaller/pyinstaller>
+- Licença da ferramenta de build usada nesta versão: GNU AGPL v3.
+- O Nuitka compila o entrypoint Python e monta a distribuição standalone; ele
+  não transforma bibliotecas de terceiros em código proprietário do
+  Netrunner Studio.
+- Projeto: <https://github.com/Nuitka/Nuitka>
 
 ## Inno Setup
 
