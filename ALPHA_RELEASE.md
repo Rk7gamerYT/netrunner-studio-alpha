@@ -1,4 +1,4 @@
-# Netrunner Studio A_0.4.1 — checklist de release alpha
+# Netrunner Studio A_0.4.2 — checklist de release alpha
 
 ## O que já está pronto
 
