@@ -1,4 +1,4 @@
-# Netrunner Studio — Alpha 0.4.2
+# Netrunner Studio — Alpha 0.4.3
 
 Netrunner Studio é um estúdio de produção ao vivo para Windows, com canvas
 horizontal 16:9 e vertical 9:16, preview ao vivo, cenas, fontes, mixer de
@@ -7,13 +7,13 @@ horizontal 16:9 e vertical 9:16, preview ao vivo, cenas, fontes, mixer de
 Esta página é o canal público para testers. O instalador não exige Python nem
 uma instalação separada do OBS na variante alpha bundled.
 
-A build A_0.4.2 atual usa Nuitka standalone com PySide6/Qt 6.10.1. O ciclo
+A build A_0.4.3 atual usa Nuitka standalone com PySide6/Qt 6.10.1. O ciclo
 instalar → abrir → iniciar o host nativo → fechar → desinstalar foi validado
 no Windows 11 antes da publicação.
 
 ## Download
 
-Baixe `NetrunnerStudio-Alpha-Setup-0.4.2.exe` na seção **Releases** e confira
+Baixe `NetrunnerStudio-Alpha-Setup-0.4.3.exe` na seção **Releases** e confira
 o SHA-256 publicado junto do arquivo antes de executar. Esta versão ainda é
 alpha e pode conter bugs; reporte problemas com passos para reproduzi-los.
 
