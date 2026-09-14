@@ -1,29 +1,71 @@
-# Netrunner Studio — Alpha 0.4.2
+# Netrunner Studio — Alpha A_0.4.5
 
-Netrunner Studio é um estúdio de produção ao vivo para Windows, com canvas
-horizontal 16:9 e vertical 9:16, preview ao vivo, cenas, fontes, mixer de
-áudio, transições, controles e captura de tela/janela.
+O Netrunner Studio é um estúdio de produção ao vivo para Windows, com
+canvas horizontal 16:9 e vertical 9:16, Prévia/Programa, cenas, fontes,
+mixer de áudio, transições e controles em um fluxo inspirado no OBS, com
+identidade própria.
 
-Esta página é o canal público para testers. O instalador não exige Python nem
-uma instalação separada do OBS na variante alpha bundled.
+Este repositório é o canal público de distribuição para testers. O código
+próprio do Netrunner Studio permanece fechado no repositório privado de
+desenvolvimento; esta página e as Releases não publicam arquivos-fonte.
 
-A build A_0.4.2 atual usa Nuitka standalone com PySide6/Qt 6.10.1. O ciclo
-instalar → abrir → iniciar o host nativo → fechar → desinstalar foi validado
-no Windows 11 antes da publicação.
+## Download e instalação
 
-## Download
+Baixe a [Release A_0.4.5](https://github.com/Rk7gamerYT/netrunner-studio-alpha/releases/tag/v0.4.5)
+e siga estes passos:
 
-Baixe `NetrunnerStudio-Alpha-Setup-0.4.2.exe` na seção **Releases** e confira
-o SHA-256 publicado junto do arquivo antes de executar. Esta versão ainda é
-alpha e pode conter bugs; reporte problemas com passos para reproduzi-los.
+1. Baixe `NetrunnerStudio-A_0.4.5-Installer-Windows-x64.zip`.
+2. Extraia o ZIP para uma pasta local.
+3. Execute `NetrunnerStudio-Alpha-Setup-0.4.5.exe`.
+4. Abra o Netrunner Studio pelo atalho criado no Menu Iniciar ou na área de
+   trabalho.
 
-As capturas serão atualizadas depois da rodada atual de correções visuais; a
-Release prioriza o instalador funcional e não usa imagens antigas de
-desenvolvimento como se fossem a interface final.
+O instalador é por usuário e não precisa de privilégios de administrador.
+Nesta variante alpha bundled, Python e uma instalação separada do OBS Studio
+não são necessários para executar o app.
+
+## Verificação do download
+
+O ZIP inclui o arquivo `NetrunnerStudio-A_0.4.5-Installer.sha256`. Depois de
+extrair o instalador, no PowerShell execute:
+
+```powershell
+Get-FileHash .\NetrunnerStudio-Alpha-Setup-0.4.5.exe -Algorithm SHA256
+```
+
+Compare o resultado com o hash publicado no arquivo `.sha256`. O instalador
+não possui assinatura Authenticode reconhecida nesta fase; o Windows pode
+exibir um aviso do SmartScreen mesmo quando o hash está correto.
+
+## Destaques da A_0.4.5
+
+- Modo Estúdio com Prévia e Programa independentes.
+- Canvas horizontal e vertical sincronizados quando o destino conjunto está
+  habilitado.
+- Publicação com ciclo real de transição, incluindo Corte, Fade, Swipe e
+  Slide, com bloqueio do botão até a conclusão.
+- Cenas e fontes com salvamento automático após alterações confirmadas.
+- `Ctrl+Z` para desfazer alterações estruturais e transformações do canvas.
+- Mixer de áudio, controles de transmissão/gravação e composição isolada na
+  Prévia.
+- Runtime necessário do OBS Studio bundled nesta build alpha, com os avisos e
+  licenças correspondentes dentro da instalação.
+
+## Avisos da versão alpha
+
+Esta é uma versão de testes. Podem existir bugs, incompatibilidades com
+hardware específico ou avisos do antivírus/SmartScreen. Para reportar um
+problema, informe a versão do Windows, GPU, passo a passo para reproduzir,
+transição/canvas usados e, se possível, o horário do teste e uma captura.
+
+Não substitua os arquivos instalados manualmente. Para testar uma versão nova,
+instale o pacote correspondente pela Release; o instalador mantém a
+instalação por usuário em `%LOCALAPPDATA%\Netrunner Studio`.
 
 ## Licenças
 
-O código próprio do Netrunner Studio não é publicado neste repositório. Os
-avisos e links das dependências de terceiros estão em
-[`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md). A distribuição bundled
-inclui o runtime do OBS Studio e sua licença GPLv2 correspondente.
+O código próprio, a marca e os recursos do Netrunner Studio não são publicados
+neste repositório. A build bundled inclui componentes do OBS Studio sob GPLv2,
+com a licença, os avisos de terceiros e a referência ao código-fonte
+correspondente dentro da instalação.
+
