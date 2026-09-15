@@ -1,4 +1,4 @@
-# Netrunner Studio — Alpha A_0.4.5
+# Netrunner Studio — Alpha A_0.4.7
 
 O Netrunner Studio é um estúdio de produção ao vivo para Windows, com
 canvas horizontal 16:9 e vertical 9:16, Prévia/Programa, cenas, fontes,
@@ -7,16 +7,17 @@ identidade própria.
 
 Este repositório é o canal público de distribuição para testers. O código
 próprio do Netrunner Studio permanece fechado no repositório privado de
-desenvolvimento; esta página e as Releases não publicam arquivos-fonte.
+desenvolvimento; esta página e as Releases publicam somente os artefatos de
+instalação e verificação, nunca os arquivos-fonte próprios.
 
 ## Download e instalação
 
-Baixe a [Release A_0.4.5](https://github.com/Rk7gamerYT/netrunner-studio-alpha/releases/tag/v0.4.5)
+Baixe a [Release A_0.4.7](https://github.com/Rk7gamerYT/netrunner-studio-alpha/releases/tag/v0.4.7)
 e siga estes passos:
 
-1. Baixe `NetrunnerStudio-A_0.4.5-Installer-Windows-x64.zip`.
+1. Baixe `NetrunnerStudio-A_0.4.7-Installer-Windows-x64.zip`.
 2. Extraia o ZIP para uma pasta local.
-3. Execute `NetrunnerStudio-Alpha-Setup-0.4.5.exe`.
+3. Execute `NetrunnerStudio-Alpha-Setup-0.4.7.exe`.
 4. Abra o Netrunner Studio pelo atalho criado no Menu Iniciar ou na área de
    trabalho.
 
@@ -26,18 +27,18 @@ não são necessários para executar o app.
 
 ## Verificação do download
 
-O ZIP inclui o arquivo `NetrunnerStudio-A_0.4.5-Installer.sha256`. Depois de
+O ZIP inclui o arquivo `NetrunnerStudio-A_0.4.7-Installer.sha256`. Depois de
 extrair o instalador, no PowerShell execute:
 
 ```powershell
-Get-FileHash .\NetrunnerStudio-Alpha-Setup-0.4.5.exe -Algorithm SHA256
+Get-FileHash .\NetrunnerStudio-Alpha-Setup-0.4.7.exe -Algorithm SHA256
 ```
 
 Compare o resultado com o hash publicado no arquivo `.sha256`. O instalador
 não possui assinatura Authenticode reconhecida nesta fase; o Windows pode
 exibir um aviso do SmartScreen mesmo quando o hash está correto.
 
-## Destaques da A_0.4.5
+## Destaques da A_0.4.7
 
 - Modo Estúdio com Prévia e Programa independentes.
 - Canvas horizontal e vertical sincronizados quando o destino conjunto está
@@ -50,6 +51,15 @@ exibir um aviso do SmartScreen mesmo quando o hash está correto.
   Prévia.
 - Runtime necessário do OBS Studio bundled nesta build alpha, com os avisos e
   licenças correspondentes dentro da instalação.
+- Correção do crash de fechamento durante transições do Modo Estúdio.
+- Persistência de projeto e rascunho da Prévia validada após reinicialização.
+- Cobertura permanente para WebSocket, efeitos, animações, gravação,
+  Multi-RTMP e Cenas Vinculadas.
+- Revisões pontuais de performance no motor nativo e na interface.
+- Menu de contexto de fontes organizado por categorias, com comandos de
+  composição, transformação, pré-visualização e atalhos inspirados no OBS.
+- Diálogos de propriedades de transição redesenhados, com prévia A/B compacta,
+  campos alinhados e seletor de cor mais claro.
 
 ## Avisos da versão alpha
 
@@ -68,4 +78,3 @@ O código próprio, a marca e os recursos do Netrunner Studio não são publicad
 neste repositório. A build bundled inclui componentes do OBS Studio sob GPLv2,
 com a licença, os avisos de terceiros e a referência ao código-fonte
 correspondente dentro da instalação.
-
