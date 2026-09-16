@@ -1,4 +1,4 @@
-# Netrunner Studio — Alpha A_0.4.7
+# Netrunner Studio — Alpha A_0.4.8
 
 O Netrunner Studio é um estúdio de produção ao vivo para Windows, com
 canvas horizontal 16:9 e vertical 9:16, Prévia/Programa, cenas, fontes,
@@ -12,12 +12,12 @@ instalação e verificação, nunca os arquivos-fonte próprios.
 
 ## Download e instalação
 
-Baixe a [Release A_0.4.7](https://github.com/Rk7gamerYT/netrunner-studio-alpha/releases/tag/v0.4.7)
+Baixe a [Release A_0.4.8](https://github.com/Rk7gamerYT/netrunner-studio-alpha/releases/tag/v0.4.8)
 e siga estes passos:
 
-1. Baixe `NetrunnerStudio-A_0.4.7-Installer-Windows-x64.zip`.
+1. Baixe `NetrunnerStudio-A_0.4.8-Installer-Windows-x64.zip`.
 2. Extraia o ZIP para uma pasta local.
-3. Execute `NetrunnerStudio-Alpha-Setup-0.4.7.exe`.
+3. Execute `NetrunnerStudio-Alpha-Setup-0.4.8.exe`.
 4. Abra o Netrunner Studio pelo atalho criado no Menu Iniciar ou na área de
    trabalho.
 
@@ -27,18 +27,18 @@ não são necessários para executar o app.
 
 ## Verificação do download
 
-O ZIP inclui o arquivo `NetrunnerStudio-A_0.4.7-Installer.sha256`. Depois de
+O ZIP inclui o arquivo `NetrunnerStudio-A_0.4.8-Installer.sha256`. Depois de
 extrair o instalador, no PowerShell execute:
 
 ```powershell
-Get-FileHash .\NetrunnerStudio-Alpha-Setup-0.4.7.exe -Algorithm SHA256
+Get-FileHash .\NetrunnerStudio-Alpha-Setup-0.4.8.exe -Algorithm SHA256
 ```
 
 Compare o resultado com o hash publicado no arquivo `.sha256`. O instalador
 não possui assinatura Authenticode reconhecida nesta fase; o Windows pode
 exibir um aviso do SmartScreen mesmo quando o hash está correto.
 
-## Destaques da A_0.4.7
+## Destaques da A_0.4.8
 
 - Modo Estúdio com Prévia e Programa independentes.
 - Canvas horizontal e vertical sincronizados quando o destino conjunto está
@@ -60,6 +60,12 @@ exibir um aviso do SmartScreen mesmo quando o hash está correto.
   composição, transformação, pré-visualização e atalhos inspirados no OBS.
 - Diálogos de propriedades de transição redesenhados, com prévia A/B compacta,
   campos alinhados e seletor de cor mais claro.
+- Destinos de transmissão configuráveis separadamente por canvas, incluindo
+  o canvas Vertical.
+- Renomeação de cenas e fontes com `F2` ou pelo menu do botão direito.
+- Indicador roxo no ícone do app durante gravação ou transmissão ao vivo.
+- Canais mutados do mixer apresentados em escala de cinza para distinção rápida.
+- Correções de persistência e de consistência visual nos painéis de transmissão.
 
 ## Avisos da versão alpha
 

@@ -1,4 +1,4 @@
-# Netrunner Studio A_0.4.7 — checklist de release alpha
+# Netrunner Studio A_0.4.8 — checklist de release alpha
 
 ## O que já está pronto
 
@@ -37,6 +37,12 @@
 - API WebSocket, efeitos, animações, gravação, Multi-RTMP e Cenas Vinculadas
   cobertos por testes permanentes.
 - Revisões pontuais de performance no motor nativo e na interface Python/Qt.
+- Saídas de transmissão organizadas por canvas, com suporte próprio para
+  destinos do canvas Vertical e sem fluxo duplicado de adição de destinos.
+- Estado do mixer em mute claramente indicado com tratamento monocromático.
+- Indicador roxo no ícone do aplicativo enquanto houver gravação ou live ativa.
+- Renomeação de cenas e fontes pelo menu de contexto ou pela tecla `F2`.
+- Ajustes de consistência visual nos painéis e na lista de saídas.
 
 ## Gates antes de publicar
 
