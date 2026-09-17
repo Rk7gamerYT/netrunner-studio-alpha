@@ -1,4 +1,4 @@
-# Netrunner Studio — Alpha A_0.4.8
+# Netrunner Studio — Beta B_0.5.0
 
 O Netrunner Studio é um estúdio de produção ao vivo para Windows, com
 canvas horizontal 16:9 e vertical 9:16, Prévia/Programa, cenas, fontes,
@@ -12,33 +12,33 @@ instalação e verificação, nunca os arquivos-fonte próprios.
 
 ## Download e instalação
 
-Baixe a [Release A_0.4.8](https://github.com/Rk7gamerYT/netrunner-studio-alpha/releases/tag/v0.4.8)
+Baixe a [Release B_0.5.0](https://github.com/Rk7gamerYT/netrunner-studio-alpha/releases/tag/v0.5.0)
 e siga estes passos:
 
-1. Baixe `NetrunnerStudio-A_0.4.8-Installer-Windows-x64.zip`.
+1. Baixe `NetrunnerStudio-B_0.5.0-Installer-Windows-x64.zip`.
 2. Extraia o ZIP para uma pasta local.
-3. Execute `NetrunnerStudio-Alpha-Setup-0.4.8.exe`.
+3. Execute `NetrunnerStudio-Beta-Setup-0.5.0.exe`.
 4. Abra o Netrunner Studio pelo atalho criado no Menu Iniciar ou na área de
    trabalho.
 
 O instalador é por usuário e não precisa de privilégios de administrador.
-Nesta variante alpha bundled, Python e uma instalação separada do OBS Studio
+Nesta variante beta bundled, Python e uma instalação separada do OBS Studio
 não são necessários para executar o app.
 
 ## Verificação do download
 
-O ZIP inclui o arquivo `NetrunnerStudio-A_0.4.8-Installer.sha256`. Depois de
+O ZIP inclui o arquivo `NetrunnerStudio-B_0.5.0-Installer.sha256`. Depois de
 extrair o instalador, no PowerShell execute:
 
 ```powershell
-Get-FileHash .\NetrunnerStudio-Alpha-Setup-0.4.8.exe -Algorithm SHA256
+Get-FileHash .\NetrunnerStudio-Beta-Setup-0.5.0.exe -Algorithm SHA256
 ```
 
 Compare o resultado com o hash publicado no arquivo `.sha256`. O instalador
 não possui assinatura Authenticode reconhecida nesta fase; o Windows pode
 exibir um aviso do SmartScreen mesmo quando o hash está correto.
 
-## Destaques da A_0.4.8
+## Destaques da B_0.5.0
 
 - Modo Estúdio com Prévia e Programa independentes.
 - Canvas horizontal e vertical sincronizados quando o destino conjunto está
@@ -49,7 +49,7 @@ exibir um aviso do SmartScreen mesmo quando o hash está correto.
 - `Ctrl+Z` para desfazer alterações estruturais e transformações do canvas.
 - Mixer de áudio, controles de transmissão/gravação e composição isolada na
   Prévia.
-- Runtime necessário do OBS Studio bundled nesta build alpha, com os avisos e
+- Runtime necessário do OBS Studio bundled nesta build beta, com os avisos e
   licenças correspondentes dentro da instalação.
 - Correção do crash de fechamento durante transições do Modo Estúdio.
 - Persistência de projeto e rascunho da Prévia validada após reinicialização.
@@ -66,8 +66,12 @@ exibir um aviso do SmartScreen mesmo quando o hash está correto.
 - Indicador roxo no ícone do app durante gravação ou transmissão ao vivo.
 - Canais mutados do mixer apresentados em escala de cinza para distinção rápida.
 - Correções de persistência e de consistência visual nos painéis de transmissão.
+- Ícones SVG padronizados e cards de destinos com gradiente compartilhado,
+  alinhamento consistente e suporte ao Kick, Trovo, Facebook e X.
+- Captura de monitor usando DXGI por padrão, com restauração validada após
+  reinício enquanto a captura estava ativa.
 
-## Avisos da versão alpha
+## Avisos da versão beta
 
 Esta é uma versão de testes. Podem existir bugs, incompatibilidades com
 hardware específico ou avisos do antivírus/SmartScreen. Para reportar um
