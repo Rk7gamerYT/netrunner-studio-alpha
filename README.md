@@ -1,4 +1,4 @@
-# Netrunner Studio — Beta B_0.5.0
+# Netrunner Studio — Beta B_0.5.1
 
 O Netrunner Studio é um estúdio de produção ao vivo para Windows, com
 canvas horizontal 16:9 e vertical 9:16, Prévia/Programa, cenas, fontes,
@@ -12,12 +12,12 @@ instalação e verificação, nunca os arquivos-fonte próprios.
 
 ## Download e instalação
 
-Baixe a [Release B_0.5.0](https://github.com/Rk7gamerYT/netrunner-studio-alpha/releases/tag/v0.5.0)
+Baixe a [Release B_0.5.1](https://github.com/Rk7gamerYT/netrunner-studio-alpha/releases/tag/v0.5.1)
 e siga estes passos:
 
-1. Baixe `NetrunnerStudio-B_0.5.0-Installer-Windows-x64.zip`.
+1. Baixe `NetrunnerStudio-B_0.5.1-Installer-Windows-x64.zip`.
 2. Extraia o ZIP para uma pasta local.
-3. Execute `NetrunnerStudio-Beta-Setup-0.5.0.exe`.
+3. Execute `NetrunnerStudio-Beta-Setup-0.5.1.exe`.
 4. Abra o Netrunner Studio pelo atalho criado no Menu Iniciar ou na área de
    trabalho.
 
@@ -27,18 +27,30 @@ não são necessários para executar o app.
 
 ## Verificação do download
 
-O ZIP inclui o arquivo `NetrunnerStudio-B_0.5.0-Installer.sha256`. Depois de
+O ZIP inclui o arquivo `NetrunnerStudio-B_0.5.1-Installer.sha256`. Depois de
 extrair o instalador, no PowerShell execute:
 
 ```powershell
-Get-FileHash .\NetrunnerStudio-Beta-Setup-0.5.0.exe -Algorithm SHA256
+Get-FileHash .\NetrunnerStudio-Beta-Setup-0.5.1.exe -Algorithm SHA256
 ```
 
 Compare o resultado com o hash publicado no arquivo `.sha256`. O instalador
 não possui assinatura Authenticode reconhecida nesta fase; o Windows pode
 exibir um aviso do SmartScreen mesmo quando o hash está correto.
 
-## Destaques da B_0.5.0
+## Destaques da B_0.5.1
+
+- Suporte a gravação em MP4, MOV, FLV e MPEG-TS (além de MKV) e a codecs de
+  áudio Opus, FLAC e PCM (além de AAC), com aviso explícito de que MP4/MOV
+  não são tão resistentes a uma queda do app quanto o MKV.
+- Pausar e retomar a gravação sem finalizar o arquivo, sem afetar uma
+  transmissão simultânea do mesmo canvas.
+- Faixas de áudio da gravação movidas para Configurações → Áudio.
+- Correções de bugs reais reportados por usuários: exibição de dispositivo de
+  áudio em Configurações, persistência das opções avançadas do Modo Estúdio e
+  perda de filtros de áudio ao reselecionar um dispositivo.
+
+## Destaques acumulados desde a B_0.5.0
 
 - Modo Estúdio com Prévia e Programa independentes.
 - Canvas horizontal e vertical sincronizados quando o destino conjunto está
