@@ -1,4 +1,4 @@
-# Netrunner Studio — Beta B_0.5.3
+# Netrunner Studio — Beta B_0.5.4
 
 O Netrunner Studio é um estúdio de produção ao vivo para Windows, com
 canvas horizontal 16:9 e vertical 9:16, Prévia/Programa, cenas, fontes,
@@ -12,12 +12,12 @@ instalação e verificação, nunca os arquivos-fonte próprios.
 
 ## Download e instalação
 
-Baixe a [Release B_0.5.3](https://github.com/Rk7gamerYT/netrunner-studio-alpha/releases/tag/v0.5.3)
+Baixe a [Release B_0.5.4](https://github.com/Rk7gamerYT/netrunner-studio-alpha/releases/tag/v0.5.4)
 e siga estes passos:
 
-1. Baixe `NetrunnerStudio-B_0.5.3-Installer-Windows-x64.zip`.
+1. Baixe `NetrunnerStudio-B_0.5.4-Installer-Windows-x64.zip`.
 2. Extraia o ZIP para uma pasta local.
-3. Execute `NetrunnerStudio-Beta-Setup-0.5.3.exe`.
+3. Execute `NetrunnerStudio-Beta-Setup-0.5.4.exe`.
 4. Abra o Netrunner Studio pelo atalho criado no Menu Iniciar ou na área de
    trabalho.
 
@@ -27,18 +27,26 @@ não são necessários para executar o app.
 
 ## Verificação do download
 
-O ZIP inclui o arquivo `NetrunnerStudio-B_0.5.3-Installer.sha256`. Depois de
+O ZIP inclui o arquivo `NetrunnerStudio-B_0.5.4-Installer.sha256`. Depois de
 extrair o instalador, no PowerShell execute:
 
 ```powershell
-Get-FileHash .\NetrunnerStudio-Beta-Setup-0.5.3.exe -Algorithm SHA256
+Get-FileHash .\NetrunnerStudio-Beta-Setup-0.5.4.exe -Algorithm SHA256
 ```
 
 Compare o resultado com o hash publicado no arquivo `.sha256`. O instalador
 não possui assinatura Authenticode reconhecida nesta fase; o Windows pode
 exibir um aviso do SmartScreen mesmo quando o hash está correto.
 
-## Destaques da B_0.5.3
+## Destaques da B_0.5.4
+
+- Adicionado: suporte a AMD FidelityFX Super Resolution (FSR) para melhorar
+  a nitidez de fontes redimensionadas -- filtros "Redimensionar FSR" e
+  "Nitidez FSR" (Filtros → Adicionar).
+- Adicionado: a opção "FSR" em Configurações → Vídeo → "Filtro de redução"
+  (ambos os canvases) e no filtro de escala por item de cena.
+
+## Destaques acumulados desde a B_0.5.0
 
 - Corrigido (segurança): a senha do WebSocket ficava descriptografada na
   memória durante toda a sessão da tela de Configurações, mesmo sem clicar em
@@ -48,9 +56,6 @@ exibir um aviso do SmartScreen mesmo quando o hash está correto.
 - Adicionado: arrastar cenas com o mouse para reorganizá-las.
 - Corrigido: "Cenas Vinculadas" não funcionava corretamente durante o Modo
   Estúdio.
-
-## Destaques acumulados desde a B_0.5.0
-
 - Corrigido: "Cenas Vinculadas" não sobrevivia a um reinício do app.
 - Ícone próprio na barra de tarefas enquanto grava ou transmite, no lugar do
   antigo selo roxo por cima do ícone normal.
