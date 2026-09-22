@@ -1,4 +1,4 @@
-# Netrunner Studio — Beta B_0.5.5
+# Netrunner Studio — Beta B_0.5.6
 
 O Netrunner Studio é um estúdio de produção ao vivo para Windows, com
 canvas horizontal 16:9 e vertical 9:16, Prévia/Programa, cenas, fontes,
@@ -12,12 +12,12 @@ instalação e verificação, nunca os arquivos-fonte próprios.
 
 ## Download e instalação
 
-Baixe a [Release B_0.5.5](https://github.com/Rk7gamerYT/netrunner-studio-alpha/releases/tag/v0.5.5)
+Baixe a [Release B_0.5.6](https://github.com/Rk7gamerYT/netrunner-studio-alpha/releases/tag/v0.5.6)
 e siga estes passos:
 
-1. Baixe `NetrunnerStudio-B_0.5.5-Installer-Windows-x64.zip`.
+1. Baixe `NetrunnerStudio-B_0.5.6-Installer-Windows-x64.zip`.
 2. Extraia o ZIP para uma pasta local.
-3. Execute `NetrunnerStudio-Beta-Setup-0.5.5.exe`.
+3. Execute `NetrunnerStudio-Beta-Setup-0.5.6.exe`.
 4. Abra o Netrunner Studio pelo atalho criado no Menu Iniciar ou na área de
    trabalho.
 
@@ -27,25 +27,33 @@ não são necessários para executar o app.
 
 ## Verificação do download
 
-O ZIP inclui o arquivo `NetrunnerStudio-B_0.5.5-Installer.sha256`. Depois de
+O ZIP inclui o arquivo `NetrunnerStudio-B_0.5.6-Installer.sha256`. Depois de
 extrair o instalador, no PowerShell execute:
 
 ```powershell
-Get-FileHash .\NetrunnerStudio-Beta-Setup-0.5.5.exe -Algorithm SHA256
+Get-FileHash .\NetrunnerStudio-Beta-Setup-0.5.6.exe -Algorithm SHA256
 ```
 
 Compare o resultado com o hash publicado no arquivo `.sha256`. O instalador
 não possui assinatura Authenticode reconhecida nesta fase; o Windows pode
 exibir um aviso do SmartScreen mesmo quando o hash está correto.
 
-## Destaques da B_0.5.5
+## Destaques da B_0.5.6
+
+- Adicionado: placeholder de "Pré-visualização desativada" com a identidade
+  visual do próprio Netrunner Studio (em vez da tela cinza genérica do OBS)
+  ao desativar a prévia de um canvas.
+- Adicionado: "Modo Clássico" (Configurações → Geral) -- oculta o canvas
+  Vertical na tela de Cenários pra quem quer trabalhar só com o Horizontal,
+  como o OBS tradicional. Requer reiniciar o app para aplicar.
+- Corrigido: removida a dica "Ctrl+Z desfaz..." que aparecia toda vez que o
+  mouse passava sobre a prévia.
+
+## Destaques acumulados desde a B_0.5.0
 
 - Adicionado: "Filtro de redução" (Configurações → Vídeo, ambos os
   canvases) e o filtro de escala por item de cena agora oferecem 3 níveis
   de FSR -- "FSR Balanceado", "FSR Qualidade" e "FSR Desempenho".
-
-## Destaques acumulados desde a B_0.5.0
-
 - Adicionado: suporte a AMD FidelityFX Super Resolution (FSR) para melhorar
   a nitidez de fontes redimensionadas -- filtros "Redimensionar FSR" e
   "Nitidez FSR" (Filtros → Adicionar).
