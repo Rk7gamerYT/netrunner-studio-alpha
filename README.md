@@ -1,4 +1,4 @@
-# Netrunner Studio — Beta B_0.5.6
+# Netrunner Studio — Beta B_0.5.7
 
 O Netrunner Studio é um estúdio de produção ao vivo para Windows, com
 canvas horizontal 16:9 e vertical 9:16, Prévia/Programa, cenas, fontes,
@@ -12,12 +12,12 @@ instalação e verificação, nunca os arquivos-fonte próprios.
 
 ## Download e instalação
 
-Baixe a [Release B_0.5.6](https://github.com/Rk7gamerYT/netrunner-studio-alpha/releases/tag/v0.5.6)
+Baixe a [Release B_0.5.7](https://github.com/Rk7gamerYT/netrunner-studio-alpha/releases/tag/v0.5.7)
 e siga estes passos:
 
-1. Baixe `NetrunnerStudio-B_0.5.6-Installer-Windows-x64.zip`.
+1. Baixe `NetrunnerStudio-B_0.5.7-Installer-Windows-x64.zip`.
 2. Extraia o ZIP para uma pasta local.
-3. Execute `NetrunnerStudio-Beta-Setup-0.5.6.exe`.
+3. Execute `NetrunnerStudio-Beta-Setup-0.5.7.exe`.
 4. Abra o Netrunner Studio pelo atalho criado no Menu Iniciar ou na área de
    trabalho.
 
@@ -27,18 +27,34 @@ não são necessários para executar o app.
 
 ## Verificação do download
 
-O ZIP inclui o arquivo `NetrunnerStudio-B_0.5.6-Installer.sha256`. Depois de
+O ZIP inclui o arquivo `NetrunnerStudio-B_0.5.7-Installer.sha256`. Depois de
 extrair o instalador, no PowerShell execute:
 
 ```powershell
-Get-FileHash .\NetrunnerStudio-Beta-Setup-0.5.6.exe -Algorithm SHA256
+Get-FileHash .\NetrunnerStudio-Beta-Setup-0.5.7.exe -Algorithm SHA256
 ```
 
 Compare o resultado com o hash publicado no arquivo `.sha256`. O instalador
 não possui assinatura Authenticode reconhecida nesta fase; o Windows pode
 exibir um aviso do SmartScreen mesmo quando o hash está correto.
 
-## Destaques da B_0.5.6
+## Destaques da B_0.5.7
+
+- Adicionado: "Perfis de Configuração" (Configurações → Geral) -- salve as
+  configurações atuais (vídeo, encoder, áudio, atalhos, Modo Estúdio, Modo
+  Clássico, rede...) como um perfil nomeado, troque entre perfis salvos, e
+  exporte/importe um perfil pra backup ou pra levar pra outra máquina.
+- Adicionado: módulo de Atualização (Configurações → Geral + barra de
+  status) -- verifica novas versões publicadas, com aviso automático ao
+  abrir o app. Nunca baixa ou instala nada sozinho: só aponta pro navegador
+  ou baixa o ZIP como um arquivo comum, a instalação continua manual.
+- Adicionado: cor e ícone personalizado por cena (Cenas → botão direito) --
+  paleta de 8 cores (ou personalizada) e 12 ícones, viaja junto com
+  "Exportar/Importar projeto".
+- Corrigido: o menu "Pré-visualização" agora mostra "Ativar"/"Desativar" (e
+  "Bloquear"/"Desbloquear") de acordo com o estado real do canvas.
+
+## Destaques acumulados desde a B_0.5.0
 
 - Adicionado: placeholder de "Pré-visualização desativada" com a identidade
   visual do próprio Netrunner Studio (em vez da tela cinza genérica do OBS)
@@ -48,9 +64,6 @@ exibir um aviso do SmartScreen mesmo quando o hash está correto.
   como o OBS tradicional. Requer reiniciar o app para aplicar.
 - Corrigido: removida a dica "Ctrl+Z desfaz..." que aparecia toda vez que o
   mouse passava sobre a prévia.
-
-## Destaques acumulados desde a B_0.5.0
-
 - Adicionado: "Filtro de redução" (Configurações → Vídeo, ambos os
   canvases) e o filtro de escala por item de cena agora oferecem 3 níveis
   de FSR -- "FSR Balanceado", "FSR Qualidade" e "FSR Desempenho".
