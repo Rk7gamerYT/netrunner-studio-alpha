@@ -1,49 +1,53 @@
-# Netrunner Studio — Beta B_0.5.7
+# Netrunner Studio 1.0.0
 
 O Netrunner Studio é um estúdio de produção ao vivo para Windows, com
 canvas horizontal 16:9 e vertical 9:16, Prévia/Programa, cenas, fontes,
 mixer de áudio, transições e controles em um fluxo inspirado no OBS, com
 identidade própria.
 
-Este repositório é o canal público de distribuição para testers. O código
-próprio do Netrunner Studio permanece fechado no repositório privado de
+Esta é a primeira versão estável, depois de uma sequência de betas
+(B_0.5.0 a B_0.5.7) publicadas e testadas por usuários reais. Este
+repositório é o canal público de distribuição. O código próprio do
+Netrunner Studio permanece fechado no repositório privado de
 desenvolvimento; esta página e as Releases publicam somente os artefatos de
 instalação e verificação, nunca os arquivos-fonte próprios.
 
 ## Download e instalação
 
-Baixe a [Release B_0.5.7](https://github.com/Rk7gamerYT/netrunner-studio-alpha/releases/tag/v0.5.7)
+Baixe a [Release 1.0.0](https://github.com/Rk7gamerYT/netrunner-studio-alpha/releases/tag/v1.0.0)
 e siga estes passos:
 
-1. Baixe `NetrunnerStudio-B_0.5.7-Installer-Windows-x64.zip`.
+1. Baixe `NetrunnerStudio-1.0.0-Installer-Windows-x64.zip`.
 2. Extraia o ZIP para uma pasta local.
-3. Execute `NetrunnerStudio-Beta-Setup-0.5.7.exe`.
+3. Execute `NetrunnerStudio-Setup-1.0.0.exe`.
 4. Abra o Netrunner Studio pelo atalho criado no Menu Iniciar ou na área de
    trabalho.
 
 O instalador é por usuário e não precisa de privilégios de administrador.
-Nesta variante beta bundled, Python e uma instalação separada do OBS Studio
-não são necessários para executar o app.
+Nesta variante bundled, Python e uma instalação separada do OBS Studio não
+são necessários para executar o app.
 
 ## Verificação do download
 
-O ZIP inclui o arquivo `NetrunnerStudio-B_0.5.7-Installer.sha256`. Depois de
+O ZIP inclui o arquivo `NetrunnerStudio-1.0.0-Installer.sha256`. Depois de
 extrair o instalador, no PowerShell execute:
 
 ```powershell
-Get-FileHash .\NetrunnerStudio-Beta-Setup-0.5.7.exe -Algorithm SHA256
+Get-FileHash .\NetrunnerStudio-Setup-1.0.0.exe -Algorithm SHA256
 ```
 
 Compare o resultado com o hash publicado no arquivo `.sha256`. O instalador
-não possui assinatura Authenticode reconhecida nesta fase; o Windows pode
-exibir um aviso do SmartScreen mesmo quando o hash está correto.
+não possui assinatura Authenticode reconhecida (sem certificado pago); o
+Windows pode exibir um aviso do SmartScreen mesmo quando o hash está
+correto.
 
-## Destaques da B_0.5.7
+## Novidades da 1.0.0
 
 - Adicionado: "Perfis de Configuração" (Configurações → Geral) -- salve as
   configurações atuais (vídeo, encoder, áudio, atalhos, Modo Estúdio, Modo
-  Clássico, rede...) como um perfil nomeado, troque entre perfis salvos, e
-  exporte/importe um perfil pra backup ou pra levar pra outra máquina.
+  Clássico, rede...) como um perfil nomeado, troque entre perfis salvos,
+  duplique/renomeie um perfil, e exporte/importe um perfil pra backup ou
+  pra levar pra outra máquina.
 - Adicionado: módulo de Atualização (Configurações → Geral + barra de
   status) -- verifica novas versões publicadas, com aviso automático ao
   abrir o app. Nunca baixa ou instala nada sozinho: só aponta pro navegador
@@ -51,10 +55,25 @@ exibir um aviso do SmartScreen mesmo quando o hash está correto.
 - Adicionado: cor e ícone personalizado por cena (Cenas → botão direito) --
   paleta de 8 cores (ou personalizada) e 12 ícones, viaja junto com
   "Exportar/Importar projeto".
+- Adicionado: busca ao vivo em Configurações, grupos recolhíveis, selos de
+  "Aplicação imediata"/"Requer reinício" em cada opção, e "Restaurar
+  padrões" (por seção ou geral).
+- Adicionado: densidade de interface (compacto/padrão/confortável, sem
+  precisar reiniciar) e layouts de dock nomeados (salvar/aplicar/excluir
+  a disposição dos painéis).
+- Adicionado: contador de tempo decorrido nos botões de gravação e
+  transmissão, splitter redimensionável entre as prévias, modo de zoom
+  "Preencher", projetor em tela cheia, e docks de Estatísticas e Logs.
+- Adicionado: detecção de clipping e reset de fader por duplo clique no
+  mixer de áudio; busca nas Fontes.
 - Corrigido: o menu "Pré-visualização" agora mostra "Ativar"/"Desativar" (e
-  "Bloquear"/"Desbloquear") de acordo com o estado real do canvas.
+  "Bloquear"/"Desbloquear") de acordo com o estado real do canvas; 12
+  atalhos de teclado do painel de Fontes que mostravam a tecla no menu mas
+  não funcionavam de verdade (Transformar, Projetar, Capturar, Mover);
+  botões do painel de Controles que podiam encolher até sumir num dock
+  estreito.
 
-## Destaques acumulados desde a B_0.5.0
+## Recursos
 
 - Adicionado: placeholder de "Pré-visualização desativada" com a identidade
   visual do próprio Netrunner Studio (em vez da tela cinza genérica do OBS)
@@ -100,7 +119,7 @@ exibir um aviso do SmartScreen mesmo quando o hash está correto.
 - `Ctrl+Z` para desfazer alterações estruturais e transformações do canvas.
 - Mixer de áudio, controles de transmissão/gravação e composição isolada na
   Prévia.
-- Runtime necessário do OBS Studio bundled nesta build beta, com os avisos e
+- Runtime necessário do OBS Studio bundled nesta build, com os avisos e
   licenças correspondentes dentro da instalação.
 - Correção do crash de fechamento durante transições do Modo Estúdio.
 - Persistência de projeto e rascunho da Prévia validada após reinicialização.
@@ -122,12 +141,14 @@ exibir um aviso do SmartScreen mesmo quando o hash está correto.
 - Captura de monitor usando DXGI por padrão, com restauração validada após
   reinício enquanto a captura estava ativa.
 
-## Avisos da versão beta
+## Avisos
 
-Esta é uma versão de testes. Podem existir bugs, incompatibilidades com
-hardware específico ou avisos do antivírus/SmartScreen. Para reportar um
-problema, informe a versão do Windows, GPU, passo a passo para reproduzir,
-transição/canvas usados e, se possível, o horário do teste e uma captura.
+Esta é a primeira versão estável, mas ainda sem assinatura de código
+(certificado de assinatura não é viável no momento -- ver Licenças). Podem
+existir bugs, incompatibilidades com hardware específico ou avisos do
+antivírus/SmartScreen. Para reportar um problema, informe a versão do
+Windows, GPU, passo a passo para reproduzir, transição/canvas usados e, se
+possível, o horário do teste e uma captura.
 
 Não substitua os arquivos instalados manualmente. Para testar uma versão nova,
 instale o pacote correspondente pela Release; o instalador mantém a
