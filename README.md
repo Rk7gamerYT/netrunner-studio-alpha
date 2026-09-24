@@ -1,4 +1,4 @@
-# Netrunner Studio 1.0.0
+# Netrunner Studio 1.0.2
 
 O Netrunner Studio é um estúdio de produção ao vivo para Windows, com
 canvas horizontal 16:9 e vertical 9:16, Prévia/Programa, cenas, fontes,
@@ -14,32 +14,42 @@ instalação e verificação, nunca os arquivos-fonte próprios.
 
 ## Download e instalação
 
-Baixe a [Release 1.0.0](https://github.com/Rk7gamerYT/netrunner-studio-alpha/releases/tag/v1.0.0)
+Baixe a [Release 1.0.2](https://github.com/Rk7gamerYT/netrunner-studio-oficial/releases/tag/v1.0.2)
 e siga estes passos:
 
-1. Baixe `NetrunnerStudio-1.0.0-Installer-Windows-x64.zip`.
+1. Baixe `NetrunnerStudio-1.0.2-Installer-Windows-x64.zip`.
 2. Extraia o ZIP para uma pasta local.
-3. Execute `NetrunnerStudio-Setup-1.0.0.exe`.
+3. Execute `NetrunnerStudio-Setup-1.0.2.exe`.
 4. Abra o Netrunner Studio pelo atalho criado no Menu Iniciar ou na área de
    trabalho.
 
 O instalador é por usuário e não precisa de privilégios de administrador.
-Nesta variante bundled, Python e uma instalação separada do OBS Studio não
-são necessários para executar o app.
+Nesta versão bundled, Python, OBS Studio e plugin Spout2 instalados
+separadamente não são necessários para executar o app.
 
 ## Verificação do download
 
-O ZIP inclui o arquivo `NetrunnerStudio-1.0.0-Installer.sha256`. Depois de
+O ZIP inclui o arquivo `NetrunnerStudio-1.0.2-Installer.sha256`. Depois de
 extrair o instalador, no PowerShell execute:
 
 ```powershell
-Get-FileHash .\NetrunnerStudio-Setup-1.0.0.exe -Algorithm SHA256
+Get-FileHash .\NetrunnerStudio-Setup-1.0.2.exe -Algorithm SHA256
 ```
 
 Compare o resultado com o hash publicado no arquivo `.sha256`. O instalador
 não possui assinatura Authenticode reconhecida (sem certificado pago); o
 Windows pode exibir um aviso do SmartScreen mesmo quando o hash está
 correto.
+
+## Novidades da 1.0.2
+
+- Atalhos do menu de contexto funcionam com foco na Prévia e nos outros
+  painéis; comandos do canvas não dependem de uma fonte selecionada.
+- O copiar e colar padrão dos campos de texto continua funcionando.
+- Cada tipo de fonte reúne “Novo” e as fontes existentes daquele tipo no
+  mesmo submenu, como no OBS.
+- Spout2 1.12.0 vem incluído e fixado no instalador; não exige instalação
+  separada do OBS Studio ou do plugin para usar fontes Spout.
 
 ## Novidades da 1.0.0
 
@@ -157,6 +167,4 @@ instalação por usuário em `%LOCALAPPDATA%\Netrunner Studio`.
 ## Licenças
 
 O código próprio, a marca e os recursos do Netrunner Studio não são publicados
-neste repositório. A build bundled inclui componentes do OBS Studio sob GPLv2,
-com a licença, os avisos de terceiros e a referência ao código-fonte
-correspondente dentro da instalação.
+neste repositório. A build bundled inclui o runtime OBS Studio e o plugin Spout2 sob GPLv2, com licenças, avisos de terceiros e referências aos códigos-fonte correspondentes dentro da instalação.
