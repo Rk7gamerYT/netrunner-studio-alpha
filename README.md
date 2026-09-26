@@ -1,4 +1,4 @@
-# Netrunner Studio 1.0.2
+# Netrunner Studio 1.0.3
 
 O Netrunner Studio é um estúdio de produção ao vivo para Windows, com
 canvas horizontal 16:9 e vertical 9:16, Prévia/Programa, cenas, fontes,
@@ -14,12 +14,12 @@ instalação e verificação, nunca os arquivos-fonte próprios.
 
 ## Download e instalação
 
-Baixe a [Release 1.0.2](https://github.com/Rk7gamerYT/netrunner-studio-oficial/releases/tag/v1.0.2)
+Baixe a [Release 1.0.3](https://github.com/Rk7gamerYT/netrunner-studio-oficial/releases/tag/v1.0.3)
 e siga estes passos:
 
-1. Baixe `NetrunnerStudio-1.0.2-Installer-Windows-x64.zip`.
+1. Baixe `NetrunnerStudio-1.0.3-Installer-Windows-x64.zip`.
 2. Extraia o ZIP para uma pasta local.
-3. Execute `NetrunnerStudio-Setup-1.0.2.exe`.
+3. Execute `NetrunnerStudio-Setup-1.0.3.exe`.
 4. Abra o Netrunner Studio pelo atalho criado no Menu Iniciar ou na área de
    trabalho.
 
@@ -29,17 +29,33 @@ separadamente não são necessários para executar o app.
 
 ## Verificação do download
 
-O ZIP inclui o arquivo `NetrunnerStudio-1.0.2-Installer.sha256`. Depois de
+O ZIP inclui o arquivo `NetrunnerStudio-1.0.3-Installer.sha256`. Depois de
 extrair o instalador, no PowerShell execute:
 
 ```powershell
-Get-FileHash .\NetrunnerStudio-Setup-1.0.2.exe -Algorithm SHA256
+Get-FileHash .\NetrunnerStudio-Setup-1.0.3.exe -Algorithm SHA256
 ```
 
 Compare o resultado com o hash publicado no arquivo `.sha256`. O instalador
 não possui assinatura Authenticode reconhecida (sem certificado pago); o
 Windows pode exibir um aviso do SmartScreen mesmo quando o hash está
 correto.
+
+## Novidades da 1.0.3
+
+Leva de estabilidade interna, sem mudança visível de funcionalidade:
+
+- Corrigido: uma condição de corrida rara podia perder uma alteração de
+  configuração se duas escritas acontecessem quase ao mesmo tempo.
+- Corrigido: fechar a tela de Configurações durante uma verificação de
+  atualização em andamento podia travar o app.
+- Corrigido: cancelar a escolha de janela/monitor/câmera/sender Spout2/
+  cena ou fonte existente antes da resposta do motor chegar podia travar
+  o app mais tarde, quando a resposta finalmente chegasse.
+- Corrigido: uma animação de transformação/opacidade em andamento não
+  trava mais o app se o motor nativo cair no meio dela.
+- O download automático de atualização agora confere o hash SHA-256 que
+  o próprio GitHub publica para o arquivo antes de aceitá-lo.
 
 ## Novidades da 1.0.2
 
